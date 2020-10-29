@@ -1,3 +1,7 @@
+#!name=ZhiHu
+#!desc=知乎去广告
+#!system=ios
+
 [MITM]
 hostname =  %APPEND% www.zhihu.com, zhuanlan.zhihu.com
 
