@@ -33,8 +33,5 @@ http-response ^https:\/\/article-api.smzdm.com\/article\/index_home_page script-
 # 西窗烛 （ avoscloud.com）
 http-response https://avoscloud.com/* requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcz.js,tag=西窗烛
 
-# Keep （ api.gotokeep.com）
-http-response ^https:\/\/api\.gotokeep\.com\/* requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/keep.js, tag=Keep
-
 [MITM]
-hostname = %APPEND% mp.weixin.qq.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, trade-acs.m.taobao.com, api.m.jd.com,homepage-api.smzdm.com, haojia-api.smzdm.com, article-api.smzdm.com, avoscloud.com, api.gotokeep.com
+hostname = %APPEND% mp.weixin.qq.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, trade-acs.m.taobao.com, api.m.jd.com,homepage-api.smzdm.com, haojia-api.smzdm.com, article-api.smzdm.com, avoscloud.com
