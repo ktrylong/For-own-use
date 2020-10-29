@@ -18,9 +18,6 @@ cron "1 0-18/6 * * *" script-path=https://raw.githubusercontent.com/lxk0301/scri
 #摇京豆
 cron "5 0 * * *" script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_club_lottery.js,tag=摇京豆
 
-# 爱奇艺
-cron "3 0 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
-
 # 京东种豆得豆
 cron "1 7-21/2 * * *" script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_plantBean.js,tag=京东种豆得豆
 
@@ -29,9 +26,6 @@ cron "3 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/script
 
 # Bilibili
 bilibiliCoins = type=cron,cronexp="0 2 * * *",script-path=https://raw.githubusercontent.com/cyubuchen/scripts/master/task/bilibiliCoins.js
-
-# Acfun
-cron "2 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/acfun/acfun.js
 
 # 网易云音乐
 cron "3 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.js
@@ -43,27 +37,15 @@ cron "5 0 * * *" script-path=https://raw.githubusercontent.com/zZPiglet/Task/mas
 # 腾讯视频
 cron "3 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js
 
-# 字幕组
-cron "4 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zimuzu/zimuzu.js
-
 # 饿了么
 cron "5 0 * * *" script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/elem/elemCheckIn.js
 cron "50 23 * * *" script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/elem/elemPea.js
-
-# rrtv
-cron "4 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.js
-
-# 吾爱破解
-cron "5 0 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js
 
 # bilibili 动漫
 cron "5 0 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/Manga.js
 
 # 万达电影
 万达电影_每日签到 = type=cron,cronexp=5 0 * * *,timeout=10,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/wanda/wanda_checkin.js
-
-# 彩云天气
-cron "10 8-22/2 * * *" script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js
 
 # 百度贴吧
 cron "7 0 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
