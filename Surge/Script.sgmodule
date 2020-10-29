@@ -24,6 +24,9 @@ http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness
 # 淘宝比价  (trade-acs.m.taobao.com)
 http-request ^http://.+/amdc/mobileDispatch requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price_lite.js, tag=淘宝比价1 Lite(通知版)
 http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price_lite.js, tag=淘宝比价2 Lite(通知版)
+http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js, tag=淘宝比价1
+http-request ^http://.+/amdc/mobileDispatch requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js, tag=淘宝比价2 
+http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js, tag=淘宝比价3
 
 # 什么值得买 （homepage-api.smzdm.com, haojia-api.smzdm.com, article-api.smzdm.com）
 http-response ^https:\/\/homepage-api.smzdm.com\/home script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js, requires-body=true, timeout=10, tag=什么值得买_首页去广告
@@ -34,4 +37,4 @@ http-response ^https:\/\/article-api.smzdm.com\/article\/index_home_page script-
 http-response https://avoscloud.com/* requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcz.js,tag=西窗烛
 
 [MITM]
-hostname = %APPEND% mp.weixin.qq.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, trade-acs.m.taobao.com, api.m.jd.com,homepage-api.smzdm.com, haojia-api.smzdm.com, article-api.smzdm.com, avoscloud.com
+hostname = %APPEND% mp.weixin.qq.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, amdc.m.taobao.com, trade-acs.m.taobao.com, api.m.jd.com,homepage-api.smzdm.com, haojia-api.smzdm.com, article-api.smzdm.com, avoscloud.com
