@@ -36,8 +36,5 @@ http-response https://avoscloud.com/* requires-body=1,script-path=https://raw.gi
 # VUE pro
 VUE.js = requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/VUE.js,type=http-response,pattern=^https:\/\/api\.vuevideo\.net\/api\/v1\/(users\/.+\/profile|subtitle\/prepare),script-update-interval=0
 
-# WPS
-http-response ^https://account.wps.*/api/users/ requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js, tag=WPS
-
 [MITM]
-hostname = %APPEND% mp.weixin.qq.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, trade-acs.m.taobao.com, api.m.jd.com,homepage-api.smzdm.com, haojia-api.smzdm.com, article-api.smzdm.com, avoscloud.com, api.vuevideo.net,account.wps.cn
+hostname = %APPEND% mp.weixin.qq.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, trade-acs.m.taobao.com, api.m.jd.com,homepage-api.smzdm.com, haojia-api.smzdm.com, article-api.smzdm.com, avoscloud.com, api.vuevideo.net
