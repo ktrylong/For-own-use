@@ -33,11 +33,11 @@ http-response ^https:\/\/article-api.smzdm.com\/article\/index_home_page script-
 # 西窗烛 （ avoscloud.com）
 http-response https://avoscloud.com/* requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcz.js,tag=西窗烛
 
-# VUE pro（buy.itunes.apple.com）
+# VUE pro（api.vuevideo.net）
 VUE.js = requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/VUE.js,type=http-response,pattern=^https:\/\/api\.vuevideo\.net\/api\/v1\/(users\/.+\/profile|subtitle\/prepare),script-update-interval=0, tag=VUE pro
 
-#Piesew（api.vnision.com）
+#Piesew（buy.itunes.apple.com）
 http-response https:\/\/buy\.itunes\.apple\.com\/verifyReceipt script-path=https://raw.githubusercontent.com/ZhiYi-N/Loon/master/picsew.js, requires-body=true, timeout=10, tag=piesew
 
 [MITM]
-hostname = %APPEND% mp.weixin.qq.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, trade-acs.m.taobao.com, api.m.jd.com,homepage-api.smzdm.com, haojia-api.smzdm.com, article-api.smzdm.com, avoscloud.com, api.vuevideo.net, buy.itunes.apple.com,api.vnision.com
+hostname = %APPEND% mp.weixin.qq.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, trade-acs.m.taobao.com, api.m.jd.com,homepage-api.smzdm.com, haojia-api.smzdm.com, article-api.smzdm.com, avoscloud.com, api.vuevideo.net, buy.itunes.apple.com
