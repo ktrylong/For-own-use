@@ -39,5 +39,8 @@ VUE.js = requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Sc
 #Piesew
 http-response https:\/\/buy\.itunes\.apple\.com\/verifyReceipt script-path=https://raw.githubusercontent.com/ZhiYi-N/Loon/master/picsew.js, requires-body=true, timeout=10, tag=piesew
 
+#大片-视频编辑器
+http-response ^https?:\/\/api\.vnision\.com\/v1\/(users\/|banners) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/dapian.js, tag=大片-视频编辑器
+
 [MITM]
-hostname = %APPEND% mp.weixin.qq.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, trade-acs.m.taobao.com, api.m.jd.com,homepage-api.smzdm.com, haojia-api.smzdm.com, article-api.smzdm.com, avoscloud.com, api.vuevideo.net, buy.itunes.apple.com
+hostname = %APPEND% mp.weixin.qq.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, trade-acs.m.taobao.com, api.m.jd.com,homepage-api.smzdm.com, haojia-api.smzdm.com, article-api.smzdm.com, avoscloud.com, api.vuevideo.net, buy.itunes.apple.com,api.vnision.com
