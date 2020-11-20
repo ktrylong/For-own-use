@@ -24,8 +24,5 @@ bilibiliCoinsCookie = type=http-request,pattern=^https:\/\/(m|api)\.bilibili\.co
 # 百度贴吧 （c.tieba.baidu.com）
 http-request https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js, tag=tieba
 
-# 网易严选 （*.you.163.com）
-http-request ^https:\/\/m\.you\.163\.com\/xhr\/points\/index\.json script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/yanxuan/yanxuan.cookie.js, tag=网易严选
-
 [MITM]
-hostname = %APPEND% passport.biligame.com, api.m.jd.com, daojia.jd.com, api.m.jd.com, ms.jr.id.com, m.bilibili.com, api.bilibili.com, act.10010.com, *.video.qq.com, ios.zmzapi.com, h5.ele.me, h5.ele.me, *.bilibili.com, as.xiaojukeji.com,user-api-prd-mx.wandafilm.com,cms-activity-api-prd-mx.wandafilm.com, c.tieba.baidu.com, *.you.163.com
+hostname = %APPEND% passport.biligame.com, api.m.jd.com, daojia.jd.com, api.m.jd.com, ms.jr.id.com, m.bilibili.com, api.bilibili.com, act.10010.com, *.video.qq.com, ios.zmzapi.com, h5.ele.me, h5.ele.me, *.bilibili.com, as.xiaojukeji.com,user-api-prd-mx.wandafilm.com,cms-activity-api-prd-mx.wandafilm.com, c.tieba.baidu.com
