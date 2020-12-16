@@ -3,12 +3,6 @@
 #!system=ios
 
 [Script]
-# 京东（api.m.jd.com,daojia.jd.com，api.m.jd.com, ms.jr.id.com）
-http-request https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean(Index|GroupStageIndex) max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, tag=jd
-http-request ^https:\/\/ms\.jr\.jd\.com\/gw\/generic\/bt\/h5\/m\/queryUserSignFlow script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/jdczfcookie.js, tag=京东成长分
-http-request ^https:\/\/daojia\.jd\.com\/client? script-path=https://raw.githubusercontent.com/barrym-chen/Script/master/jddj/jddj_cookie.js, tag=京东到家
-http-request ^https:\/\/ms\.jr\.jd\.com\/gw\/generic\/base\/h5\/m\/recommendGetWay script-path=https://raw.githubusercontent.com/barrym-chen/Script/master/tie/tie_cookie.js, tag=京东金额提额
-
 # Bilibli漫画 (passport.biligame.com)
 http-request ^https:\/\/passport\.biligame\.com\/api\/login\/sso.+?version%22%3A%22(3|4|5) script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/Manga.js, timeout=10,  tag=Manga.js
 
@@ -25,4 +19,4 @@ bilibiliCoinsCookie = type=http-request,pattern=^https:\/\/(m|api)\.bilibili\.co
 http-request https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js, tag=tieba
 
 [MITM]
-hostname = %APPEND% passport.biligame.com, api.m.jd.com, daojia.jd.com, api.m.jd.com, ms.jr.id.com, m.bilibili.com, api.bilibili.com, act.10010.com, *.video.qq.com, ios.zmzapi.com, h5.ele.me, h5.ele.me, *.bilibili.com, as.xiaojukeji.com,user-api-prd-mx.wandafilm.com,cms-activity-api-prd-mx.wandafilm.com, c.tieba.baidu.com
+hostname = %APPEND% passport.biligame.com, m.bilibili.com, api.bilibili.com, act.10010.com, *.video.qq.com, ios.zmzapi.com, h5.ele.me, h5.ele.me, *.bilibili.com, as.xiaojukeji.com,user-api-prd-mx.wandafilm.com,cms-activity-api-prd-mx.wandafilm.com, c.tieba.baidu.com
