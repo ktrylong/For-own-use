@@ -110,4 +110,12 @@ function roundHours(time, method) {
 	return time;
 }
 
-$httpClient.get(`https://api.waqi.info/feed/geo:${lat};${lng}/?token=${aqicnToken}`,
+$httpClient.get(`https://api.waqi.info/feed/geo:${lat};${lng}/?token=${aqicnToken}`, function (error, _response, data) {
+	if (error) {
+		let body = $response.body
+		$done({ body })
+	} else {
+		let body = modifyWeatherResp($response.body, data)
+		$done({ body })
+	}
+});
