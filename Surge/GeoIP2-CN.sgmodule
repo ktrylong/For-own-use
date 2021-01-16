@@ -1,0 +1,6 @@
+#!name=GeoIP2-CN
+#!desc=GeoIP2-CN
+#!system=ios
+
+[General]
+geoip-maxmind-url = https://cdn.jsdelivr.net/gh/Hackl0us/GeoIP2-CN@release/Country.mmdb
