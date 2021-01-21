@@ -1,5 +1,5 @@
 #!name=AQI-US standard for iOS Weather
-#!desc=Force iOS Weather app to use AQI-US standard for indicating the air quaility at China mainland. @Hackl0us
+#!desc=Force iOS Weather app to use AQI-US standard for indicating the air quaility at China mainland. 
 #!system=ios
 
 [Script]
